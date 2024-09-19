@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글꼴관련css.html</title>
+  <style>
+    span.title{
+      font-weight: 600;
+    }
+    section{
+      background-color: #ccc;
+      color: #00f;
+      /* font-size:100% */
+      /* font-size: 14px;
+      font-size:0.0875% */
+      /* font-size:0.875em;  */
+      /* 16px->1em 계산하는 방법 */
+      /* 
+      font-size 기본
+      16px 14pt 1em 100% */
+      font-size: 1em;
+      /* line-height: 100; */
+      /* line-height: 1.2; */
+      line-height: normal;
+    }
+    span{
+      color: #f00;
+    }
+    .title{
+      font-weight: 800;
+    }
+    .section2 span{
+      color: #0f0;
+    }
+    body{color: #f0f;}
+  </style>
+</head>
+<body>
+  <!-- section.section$*3>p>lorem -->
+  <section class="section1">
+    <p>Lorem <span class="title">ipsum</span> dolor sit amet, consectetur adipisicing elit. Ducimus explicabo earum, enim ea beatae sint ullam possimus optio maiores in perspiciatis, iure doloremque velit! Et deserunt mollitia nemo laborum incidunt.</p>
+  </section>
+  <section class="section2">
+    <p>Doloremque <span>omnis</span> excepturi sint, commodi maxime optio fugiat molestiae ad accusamus unde vel cum, nihil sequi facere facilis voluptatibus harum quia earum, voluptate rem? Minus voluptas iste obcaecati natus eligendi!</p>
+  </section>
+  <section class="section3">
+    <p>Accusamus <span>error</span> pariatur, amet excepturi, nesciunt totam sit eius est beatae fugit cupiditate odit eum optio praesentium. Eligendi consectetur tempore at quibusdam explicabo sapiente molestiae voluptatum? Cupiditate eveniet excepturi dolor!</p>
+  </section>
+  <!-- p>a>{글꼴을 상속받지 않는 a태그} -->
+   <!-- a태그의 글자색(color)을 지정하려면 조상아닌 a태그 본인에게 color 지정 -->
+  <p><a href="">글꼴을 상속받지 않는 a태그</a></p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae optio laborum inventore, odio, dicta porro ratione nostrum iste consequuntur tenetur quo. Rem natus amet accusantium debitis quos laboriosam officiis vitae!</p>
+</body>
+</html>
