@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background1</title>
+  <style>
+    /* reset */
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    .box{
+      width: auto;
+      min-height: 500px;
+      background-color: #f6f;
+      /* 배경이미지에 투명부분이 없으면 배경색 표시x */
+      /* 배경이미지를 반복하지 않으면 나머지 부분은 배경색 표시o */
+      background-image: url(./images/bg.jpg);
+      /* 배경이미지 해당 요소에 반복해서 표시 */
+      /* 해당요소 이미지보다 작을 경우 잘려서 표시 */
+      margin-bottom: 20px;
+    }
+    .box:first-child{
+      margin-top: 20px;;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box box1">box1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit amet at dolor reiciendis assumenda doloribus voluptatum earum. Tempore et obcaecati explicabo quisquam minus eaque pariatur neque eveniet deleniti doloremque. Enim, laborum dolorem maxime soluta voluptatum pariatur nulla assumenda nesciunt quia?</div>
+  <div class="box box2">box2</div>
+</body>
+</html>
