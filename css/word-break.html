@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>word-break</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .box{margin: 20px auto;
+    width: 400px; border: 1px solid #000;}
+    .box1{
+      word-break: keep-all;
+      text-align: center;
+    }
+    .box2{
+      word-break: normal;
+      text-align: center;
+    }
+    .box3{
+      word-break: break-all;
+      /* 영어도 단위단위 word wrap 아니라 문자단위로 wrap */
+    }
+  </style>
+</head>
+<body>
+  <div class="box box1">첸느어 춍관은 갠올반이 후머어서 렜래진다, 토번사려무나 머으다 라넌고 팡아아씬 말은, 니알어기웅거를 얀숭스솔이 힙조뎅어아는지 백필기인이 안어곤빊지 사베노그승다손 시껜, 젬알다 맴추를 시찰은</div>
+  <div class="box box2">첸느어 춍관은 갠올반이 후머어서 렜래진다, 토번사려무나 머으다 라넌고 팡아아씬 말은, 니알어기웅거를 얀숭스솔이 힙조뎅어아는지 백필기인이 안어곤빊지 사베노그승다손 시껜, 젬알다 맴추를 시찰은</div>
+  <div class="box box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quam, necessitatibus nulla porro tempore soluta iure deleniti maiores earum nobis.</div>
+  <div class="box box4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quam, necessitatibus nulla porro tempore soluta iure deleniti maiores earum nobis.</div>
+</body>
+</html>
