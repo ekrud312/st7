@@ -22,6 +22,7 @@ body, code {
   display: inline-block;
   font-size: 13px;
   line-height: 1;
+  overflow: hidden;
 }
 .ec-base-product .prdList.grd2 li{width: 50%;}
 .ec-base-product .prdList.grd3 li{width: 33.33%;}
@@ -114,7 +115,11 @@ body, code {
     transition: all 0.3s;
   
 }
-
+.description .title{opacity: 0;}
+.description .text{opacity: 0;}
+.description .name a{
+  text-decoration: none;
+}
 .description .name span {
     display: block;
     white-space: nowrap;
