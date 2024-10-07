@@ -62,6 +62,7 @@ body, code {
   align-items: center;
   cursor: pointer;
 }
+
 .ec-base-product .prdList .thumbnail .likeButton button {
   background-color: transparent;
   border: none; 
