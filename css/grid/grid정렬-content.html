@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid정렬 content</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    .wrap{margin: 20px;}
+    .container{
+      background-color: #ff6;
+      border: 10px solid #ccc;
+    }
+
+    .item{
+      background-color: dodgerblue;
+      text-align: center;
+    }
+
+    /* grid
+
+     1-6 grid-container
+     7 item
+     8 grid-container, item
+
+     1. 그리드 선언
+     2. 행 수/크기 열 수/크기
+     3. 만약 행or열 2번 지정한 행/열 수를 초과하는게 있다면
+     초과된 행 or 열 크기
+     4. 그리드 영역의 이름 템플릿 결정
+     5. 그리드 아이템이 들어간 순서 결정
+     6. 그리드 셀과 셀 사이에 여백 결정
+     7. 그리드 아이템 배치
+     8. 정렬
+    */
+    
+    .container{
+      min-height: 350px;
+    }
+
+    .grid-container{
+      display: grid; /*1*/
+      grid-template-columns: repeat(4, 100px); /*2*/
+      gap: 4px; /*6*/
+      justify-content: space-evenly;
+      /* grid-template-rows: repeat(3, 80px); 2 */
+      /* grid-auto-rows: minmax(70px, auto); 3 */
+      /* align-content: stretch; row크기 고정값이면 start */
+      /* 정렬요소를 포함하는 요소에 꽉 차게 할때 */
+      grid-template-rows: repeat(3, auto);
+      align-content: stretch; /*해당 크기가 auto 값일때 적용*/
+
+
+
+      /* grid-auto-flow: row; 기본값 */
+      /*그리드 컨테이너 안에서 모든 그리드아이템의 정렬*/
+      /* 정렬의 전제 조건은 정렬된 요소를 포함하는 요소의 크기가 정렬된 요소의 합의 크기보다 커야 정렬 실행 */
+    }
+
+
+    .item:nth-child(1),
+    .item:nth-child(5){
+      grid-column: span 2;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container grid-container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+    </div>
+  </div>
+</body>
+</html>
