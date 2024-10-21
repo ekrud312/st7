@@ -9,7 +9,11 @@
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/common.css"> -->
+	<!-- swiper scc 연결 -->
+	<link rel="stylesheet" href="js/swiper/swiper-bundle.min.css">
+
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -133,9 +137,9 @@
 						<strong data-i18n="[html]main:title01">주요 서비스와 <br>기술</strong>
 					</div>
 					<div class="cont__area">
-						<div class="cont__wrap">
-							<ul class="cont__list" aria-live="polite">
-								<li class="cont__item">
+						<div class="cont__wrap swiper">
+							<ul class="cont__list swiper-wrapper" aria-live="polite">
+								<li class="cont__item swiper-slide">
 									<a class="cont__link" href="https://datacenter.navercorp.com/" onclick="nclk_v2(event, 'sct.dtk')"
 										target="_blank">
 										<div class="thumb-box">
@@ -150,7 +154,7 @@
 										</div>
 									</a>
 								</li>
-								<li class="cont__item">
+								<li class="cont__item swiper-slide">
 									<a class="cont__link" href="/tech/techAI" onclick="nclk_v2(event, 'sct.nai')">
 										<div class="thumb-box">
 											<div class="thumbnail"><span class="blind">썸네일 이미지</span></div>
@@ -164,7 +168,7 @@
 										</div>
 									</a>
 								</li>
-								<li class="cont__item">
+								<li class="cont__item swiper-slide">
 									<a class="cont__link" href="/tech/tech1784" onclick="nclk_v2(event, 'sct.1784')">
 										<div class="thumb-box">
 											<div class="thumbnail"><span class="blind">썸네일 이미지</span></div>
@@ -178,7 +182,7 @@
 										</div>
 									</a>
 								</li>
-								<li class="cont__item">
+								<li class="cont__item swiper-slide">
 									<a class="cont__link" href="/esg/projectFlower" onclick="nclk_v2(event, 'sct.flw')">
 										<div class="thumb-box">
 											<div class="thumbnail"><span class="blind">썸네일 이미지</span></div>
@@ -193,7 +197,7 @@
 										</div>
 									</a>
 								</li>
-								<li class="cont__item">
+								<li class="cont__item swiper-slide">
 									<a class="cont__link" href="/tech/digitalTwin" onclick="nclk_v2(event, 'sct.twt')">
 										<div class="thumb-box">
 											<div class="thumbnail"><span class="blind">썸네일 이미지</span></div>
@@ -218,9 +222,9 @@
 					<div class="main-content__title">
 						<strong data-i18n="main:title02">바로가기</strong>
 					</div>
-					<div class="cont__area">
-						<ul class="cont__list">
-							<li class="cont__item">
+					<div class="cont__area swiper">
+						<ul class="cont__list swiper-wrapper">
+							<li class="cont__item  ">
 								<a class="cont__link" href="/naver/proposalInquire.html" data-nclick="dct.psl">
 									<strong class="title" data-i18n="main:goTo.list01">제휴제안을 위한</strong>
 									<span class="ico-link"><span class="blind">제휴제안으로 이동</span></span>
@@ -229,7 +233,7 @@
 									</div>
 								</a>
 							</li>
-							<li class="cont__item">
+							<li class="cont__item  ">
 								<a class="cont__link" href="/media/pressReleases.html" data-nclick="dct.media">
 									<strong class="title" data-i18n="main:goTo.list02">미디어를 위한</strong>
 									<span class="ico-link"><span class="blind">미디어로 이동</span></span>
@@ -238,7 +242,7 @@
 									</div>
 								</a>
 							</li>
-							<li class="cont__item">
+							<li class="cont__item  ">
 								<a class="cont__link" href="https://d2.naver.com/home" target="_blank" data-nclick="dct.dvr">
 									<strong class="title" data-i18n="main:goTo.list03">개발자를 위한</strong>
 									<span class="ico-link outlink"><span class="blind">네이버 d2로 이동</span></span>
@@ -247,7 +251,7 @@
 									</div>
 								</a>
 							</li>
-							<li class="cont__item">
+							<li class="cont__item  ">
 								<a class="cont__link" href="/investment/investors.html" data-nclick="dct.invr">
 									<strong class="title" data-i18n="main:goTo.list04">투자자를 위한</strong>
 									<span class="ico-link"><span class="blind">투자정보로 이동</span></span>
@@ -256,7 +260,7 @@
 									</div>
 								</a>
 							</li>
-							<li class="cont__item">
+							<li class="cont__item  ">
 								<a class="cont__link" href="https://business.naver.com/" target="_blank" data-nclick="dct.sml">
 									<strong class="title" data-i18n="main:goTo.list05">중소상공인을 위한</strong>
 									<span class="ico-link outlink"><span class="blind">네이버 비즈니스로 이동</span></span>
@@ -265,7 +269,7 @@
 									</div>
 								</a>
 							</li>
-							<li class="cont__item">
+							<li class="cont__item  ">
 								<a class="cont__link" href="https://recruit.navercorp.com/" target="_blank" data-nclick="dct.cnt">
 									<strong class="title" data-i18n="main:goTo.list06">입사지원자를 위한</strong>
 									<span class="ico-link outlink"><span class="blind">채용 페이지로 이동</span></span>
@@ -274,7 +278,7 @@
 									</div>
 								</a>
 							</li>
-							<li class="cont__item">
+							<li class="cont__item  ">
 								<a class="cont__link" href="/esg/projectFlower.html" data-nclick="dct.crt">
 									<strong class="title" data-i18n="main:goTo.list07">창작자를 위한</strong>
 									<span class="ico-link"><span class="blind">프로젝트꽃으로 이동</span></span>
