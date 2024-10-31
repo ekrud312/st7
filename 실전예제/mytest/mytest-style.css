@@ -219,7 +219,7 @@
   position: fixed;
   /* top: 80px; */
   top: 0;
-  left: auto;
+  left: 0;
   z-index: 10;
   margin: 0;
   /* width: auto; */
@@ -284,6 +284,10 @@ font-size: 2rem;
   
 }
 
+#header.fixed .inner .top_nav_box .top_category li.on .sub_cate01, 
+#header.fixed .inner .top_nav_box .top_category .sub-category {
+  top: calc(0- var(--main_top_banner-height));
+}
 
 
 #header .inner .top_nav_box .top_category>ul>li:nth-child(4) .sub_cate01::before,
@@ -318,3 +322,60 @@ font-size: 2rem;
   color: #2a2828;
 } */
 /* //폴더스타일 2depth 브라우저 전체너비 스타일 끝 */
+
+/* 헤더 검색창 시작 */
+#header .my_top_search{
+  width: 190px;
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+}
+#header .my_top_search form{
+  display: block;
+  height: 100%;
+}
+
+#header .my_top_search .xans-layout-searchheader{
+  display: block !important;
+  position: static;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+#header .my_top_search .xans-layout-searchheader fieldset{
+  position: static;
+  display: inline-block;
+  width: 100%; height: 100%;
+  transform: translate(50%,-50%);
+  border: 0;
+}
+
+
+#header .my_top_search .xans-layout-searchheader #keyword{
+  /* border: 1px solid #ccc; */
+  border: 0;
+  outline: none;
+  background-color: transparent;
+}
+#header .my_top_search .xans-layout-searchheader input[type="image"]{
+  width: 22px;
+  height: 22px;
+  position: absolute; right: 15px; top: 46%;
+  transform: translateY(-50%);
+  /* border: 0; */
+}
+
+
+
+/* //헤더 검색창 끝 */
+
+
+
+#header {background-color: #fcf8f0;}
+.theme01 .xans-product-searchdata .searchField .keyword{
+  background-color: #fcf8f0;
+}
+
+.theme01 .select#order_by{
+  background-color: #fcf8f0;
+}
