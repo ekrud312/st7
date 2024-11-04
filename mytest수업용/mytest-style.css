@@ -100,6 +100,7 @@
 
  /* 루미너스 footer 디자인 수정 */
 
+ /* //루미너스 footer 디자인 수정 */
 #footer{
   background-color: #3a3a3a;
 }
@@ -198,14 +199,14 @@
 
 #footer .inner .bt_wrap{  margin-bottom:20px;}
 #footer .inner .bt_wrap2{padding-top:0}
-/* //루미너스 footer 디자인 수정 */
+
 
 
 /* 폴더스타일 2depth 브라우저 전체너비 사용하기*/
 #header .inner .top_nav_box .top_category{
   --main_top_banner-height:64px;
   --header-height:220px;
-  --sub_cate01-padding-left-right:47%; /*%단위로 넣어주시면 좋아요*/
+  --sub_cate01-padding-left-right:25%; /*%단위로 넣어주시면 좋아요*/
   --sub_cate01-padding-bottom:50px;
   --sub_cate01-title-position-gap:0px;
   --sub_cate01-title-right-gap:30px;
@@ -227,16 +228,15 @@
       var(--sub_cate01-padding-left-right) 
       var(--sub_cate01-padding-bottom);
       /*가운데 위치하기 위해서는 20%를 조절하세요*/
- /* background-color: #ff6; */
+ /* background-color: #ff6;*/
   border-bottom: 1px solid #e8e8e8;
   box-sizing: border-box;
 }
-
 #header.fixed .inner .top_nav_box .top_category li.on .sub_cate01, 
 #header.fixed .inner .top_nav_box .top_category .sub-category {
- top: calc(0- var(--main_top_banner-height));
-}
+  top:calc(0 - var(--main_top_banner-height));
 
+}
 #header .inner .top_nav_box .top_category .sub_cate01 li:hover > a, 
 #header .inner .top_nav_box .top_category .sub-category li:hover > a {
   background-color: transparent;
@@ -283,70 +283,106 @@
   width: 2px;
   border-right: 1px solid #ccc;
 }
-
-
-#header .inner .top_nav_box .top_category>ul>li:nth-child(3) .sub_cate01::before,
-#header .inner .top_nav_box .top_category>ul>li:nth-child(3) .sub_category::before{
- content: "아우터";
+#header .inner .top_nav_box .top_category>ul>li:nth-child(2) .sub_cate01::before, 
+#header .inner .top_nav_box .top_category>ul>li:nth-child(2) .sub-category::before {
+  content:"아우터";
 }
-#header .inner .top_nav_box .top_category>ul>li:nth-child(4) .sub_cate01::before,
-#header .inner .top_nav_box .top_category>ul>li:nth-child(4) .sub_category::before{
-  content: "드레스";
+#header .inner .top_nav_box .top_category>ul>li:nth-child(3) .sub_cate01::before, 
+#header .inner .top_nav_box .top_category>ul>li:nth-child(3) .sub-category::before {
+  content:"TOP";
 }
-#header .inner .top_nav_box .top_category>ul>li:nth-child(5) .sub_cate01::before,
-#header .inner .top_nav_box .top_category>ul>li:nth-child(5) .sub_category::before{
-  content: "TOP";
+#header .inner .top_nav_box .top_category>ul>li:nth-child(4) .sub_cate01::before, 
+#header .inner .top_nav_box .top_category>ul>li:nth-child(4) .sub-category::before {
+  content:"원피스";
 }
-#header .inner .top_nav_box .top_category>ul>li:nth-child(6) .sub_cate01::before,
-#header .inner .top_nav_box .top_category>ul>li:nth-child(6) .sub_category::before{
-  content: "BOTTOM";
+#header .inner .top_nav_box .top_category>ul>li:nth-child(5) .sub_cate01::before, 
+#header .inner .top_nav_box .top_category>ul>li:nth-child(5) .sub-category::before {
+  content:"men1";
 }
 
 
 /* //폴더스타일 2depth 브라우저 전체너비 스타일 끝 */
 
-/* 헤더 검색창 시작 */
+
+/*헤더검색창 시작*/
+#header .inner .top_nav_box .top_mypage li:nth-child(2) a{
+  padding-right: 0;
+}
 #header .my_top_search{
-  width: 190px;
-  height: 40px;
-  border-bottom: 1px solid #ccc;
-  align-items: center;
+ width: 190px;
+ height: 40px;
+ border-bottom:1px solid #333;
+ align-self: center;
 }
 #header .my_top_search form{
   display: block;
   height: 100%;
+ 
 }
 
 #header .my_top_search .xans-layout-searchheader{
-  display: block;
+  display: block !important;
   position: static;
   height: 100%;
   width: 100%;
-  background-color: transparent;
+  
+
 }
 #header .my_top_search .xans-layout-searchheader fieldset{
   position: static;
   display: inline-block;
   width: 100%; height: 100%;
-  transform: translate(50%,-50%);
+  transform: translate(0,0);
   border: 0;
+
 }
-
-
 #header .my_top_search .xans-layout-searchheader #keyword{
   /* border: 1px solid #ccc; */
-  border: 0;
-  outline: none;
-  background-color: transparent;
+  border:0;
+  outline:none;
 }
 #header .my_top_search .xans-layout-searchheader input[type="image"]{
-  width: 22px;
-  height: 22px;
-  position: absolute; right: 15px; top: 46%;
+  width:22px; height: 22px;
+  position: absolute; right: 0; top:50%;
   transform: translateY(-50%);
-  /* border: 0; */
 }
 
 
+@media (min-width:1024px){
+  #header .inner .top_nav_box .top_mypage .top_search{
+    display:none;
+  }
+}
+/*//헤더검색창 끝*/
 
-/* //헤더 검색창 끝 */
+/* 상품설명 칼라칩 크기 변경 시작 */
+.ec-base-product .spec .chips{
+  width:15px; height: 6px;
+  border-radius: 2px;
+}
+.ec-base-product .prdList .spec > li{
+  margin:0 0 3px;
+}
+/* 상품설명 칼라칩 크기 변경 끝*/
+
+/* 상세화면의 미리보기 옵션 시작*/
+.xans-product-detail .xans-product-option .ec-product-button.ec-product-preview li a {
+  width: 40px;
+  height: 40px;
+  min-width: auto;
+}
+/* 상세화면의 미리보기 끝 */
+
+/* 상세화면 텍스트 버튼  시작*/
+.xans-product-detail .xans-product-option .ec-product-button li a {
+  height: 40px;
+  line-height: 40px;
+  min-width: 40px;
+}
+/* 상세화면 텍스트 버튼  끝*/
+
+/* 상세화면 미리보기, 텍스트 번튼 선택 테두리 시작 */
+.xans-product-detail .xans-product-option .ec-product-button .ec-product-selected{
+  border:2px solid  #6f6f6f;
+}
+/* 상세화면 미리보기, 텍스트 번튼 선택 테두리 끝*/
