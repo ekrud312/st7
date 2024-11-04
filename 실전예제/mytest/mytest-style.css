@@ -219,7 +219,7 @@
   position: fixed;
   /* top: 80px; */
   top: 0;
-  left: 0;
+  left: auto;
   z-index: 10;
   margin: 0;
   /* width: auto; */
@@ -352,7 +352,7 @@ font-size: 2rem;
 
 
 #header .my_top_search .xans-layout-searchheader #keyword{
-  /* border: 1px solid #ccc; */
+  border: 1px solid #ccc;
   border: 0;
   outline: none;
   background-color: transparent;
@@ -362,20 +362,23 @@ font-size: 2rem;
   height: 22px;
   position: absolute; right: 15px; top: 46%;
   transform: translateY(-50%);
-  /* border: 0; */
+  border: 0;
 }
 
 
 
 /* //헤더 검색창 끝 */
 
-
-
 #header {background-color: #fcf8f0;}
+
 .theme01 .xans-product-searchdata .searchField .keyword{
   background-color: #fcf8f0;
 }
 
 .theme01 .select#order_by{
+  background-color: #fcf8f0;
+}
+
+.xans-element.xans-product.xans-product-normalpaging.ec-base-paginate.typeList{
   background-color: #fcf8f0;
 }
