@@ -382,3 +382,7 @@ font-size: 2rem;
 .xans-element.xans-product.xans-product-normalpaging.ec-base-paginate.typeList{
   background-color: #fcf8f0;
 }
+
+.xans-product-normalmenu .function select{
+  background-color: #fcf8f0;
+}
