@@ -1,0 +1,195 @@
+<div class="main_top_banner ez-align-center" data-ez-module="top-banner" data-ez-align="center"
+	data-ez-role="style.color" data-ez-display="visible" data-ez="contents-0ufi8ba-1" style>
+	<div class="top_banner_box_inner">
+		<div class="top_banner_text"><!-- 최상단 배너 수정하는곳 -->
+			<a data-ez-role="a" href="#" data-href="#" target="_self"
+				style="color: rgb(255, 255, 255); font-weight: normal;">Sale Week</a>
+		</div><!-- //top_banner_text -->
+
+		<div class="top_banner_close" data-ez-role="close">
+			<input type="checkbox" name="chkbox" id="top_banner_box_cloase" value="1" data-ez-role="disable-term"><label
+				for="top_banner_box_cloase" data-ez-role="disable-text">오늘 하루 보지 않기</label>
+			<i aria-hidden="true" class="icon icoClose white">닫기</i>
+		</div><!-- //top_banner_close -->
+	</div><!-- //top_banner_box_inner -->
+</div>
+<header id="header" class="layout1" data-ez-layout="layout1" data-ez="contents-0w8exkg-1" style="margin-bottom: 41px;">
+	<ez-prop data-version="1.0.0" type="layout">
+		<ez-var data-prop="layout" data-namespace="ez.layout.header.layout" data-type="array">
+			<ez-item data-id="layout3" data-name="1단 기본형"></ez-item>
+			<ez-item data-id="layout2" data-name="2단 좌측형"></ez-item>
+			<ez-item data-id="layout1" data-name="2단 중앙형"></ez-item>
+		</ez-var>
+	</ez-prop>
+	<div class="inner">
+		<div class="toparea display_pc_only">
+			<div class="toparea_shoppinginfo">
+				<div module="Layout_multishopList">
+					<button type="button" class="toggle">{$current_language} <i aria-hidden="true"
+							class="icon icoArrowRight"></i></button>
+					<ul module="Layout_multishopListitem">
+						<li class="{$selected_class}">
+							<a href="//{$shop_domain}/">{$locale_language}</a>
+						</li>
+						<li class="{$selected_class}">
+							<a href="//{$shop_domain}/">{$locale_language}</a>
+						</li>
+					</ul>
+				</div><!-- //Layout_multishopList -->
+				<div data-ez-group="shopping-info" data-ez-role="list">
+					<ul module="Layout_shoppingInfo">
+						<li class="{$use_mileage|display}"><a href="/myshop/mileage/historyList.html">{$mileage_name}
+								<strong>{$mileage}</strong></a></li>
+						<li class="{$use_deposit|display}"><a href="/myshop/deposits/historyList.html">{$deposit_name}
+								<strong>{$deposit}</strong></a></li>
+						<li class="{$use_coupon_cnt|display}"><a href="/myshop/coupon/coupon.html">쿠폰
+								<strong>{$coupon_cnt}</strong></a></li>
+						<li class="{$use_interest_prd|display}"><a href="/myshop/wish_list.html">관심상품
+								<strong>{$interest_prd_cnt}</strong></a></li>
+						<li class="{$use_like_product_cnt|display}">{$like_prd_tag}</li>
+						<li class="{$use_basket_cnt|display}"><a href="/order/basket.html">장바구니 <strong>{$basket_cnt}<span
+										class="{$use_basket_price|display}">({$basket_price})</span></strong></a></li>
+					</ul>
+				</div>
+			</div><!-- //toparea_shoppinginfo -->
+
+			<div class="toparea_state" data-ez-group="top-util-menu" data-ez-role="list">
+				<a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html">회원가입</a>
+				<a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">로그인</a>
+				<a data-ez-item="modify" module="Layout_stateLogon" href="/member/modify.html">내정보수정</a>
+				<a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">로그아웃</a>
+				<a data-ez-item="order" href="/myshop/order/list.html">주문조회</a>
+				<a data-ez-item="mypage" module="Layout_stateLogon" href="/myshop/index.html">마이페이지</a>
+				<a data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a>
+				<div class="toparea_state_board">
+					<a data-ez-item="board" href="#none">고객센터<i aria-hidden="true" class="icon icoArrowBottom"></i></a>
+					<ul module="Layout_BoardInfo">
+						<li><a href="{$link_board_list}">{$board_name}</a></li>
+						<li><a href="{$link_board_list}">{$board_name}</a></li>
+					</ul>
+				</div>
+			</div><!-- //toparea_state -->
+		</div><!-- //toparea -->
+
+		<div class="top_nav_box" id="top_nav_box">
+			<div class="top_logo" module="Layout_LogoTop"><a href="/"><img src="{$logo}" alt="{$mall_name}"
+						data-ez-eb="/web/upload/ezst/shop1/ez-logo-top.edibotbanner.json"></a></div><!-- //top_logo -->
+
+						
+
+			<div class="top_mypage">
+				<div module="Layout_MobileAction" class="tablet_detail_only">
+					<a href="#none" onclick="{$go_back}"><img src="/SkinImg/img/back.svg"></a>
+				</div>
+				<div class="my_top_search">
+					<form id="searchBarForm" name="" action="/product/search.html" method="get" target="_self" enctype="multipart/form-data">
+				<input id="banner_action" name="banner_action" value="" type="hidden"><div class="xans-element- xans-layout xans-layout-searchheader "><!--
+								$product_page=/product/detail.html
+								$category_page=/product/list.html
+						-->
+				<fieldset>
+				<legend>검색</legend>
+								<input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text"><input type="image" src="/mytest/img/sc1.png" alt="검색" onclick="SEARCH_BANNER.submitSearchBanner(this); return false;">
+							&nbsp;</fieldset>
+				</div>
+				</form>   <!-- //.xans-layout-searchheader -->
+				
+				</div>
+				<!-- //.my_top_search -->
+				<a href="/myshop/index.html"><!--@import(/svg/icon-user.html)--></a>
+				<a href="/order/basket.html" module="Layout_orderBasketcount"><!--@import(/svg/icon-cart.html)--><span
+						class="count {$basket_count_display|display} {$basket_count_display_class}"><span
+							class="{$basket_count_class}">{$basket_count}</span></span></a>
+				
+
+
+				<a href="javascript:;" class="eNavFold"><i aria-hidden="true" class="icon icoNav"></i></a>
+			</div><!-- //top_mypage -->
+
+			<div data-ez-module="menu-main/1" data-ez-mode="manual">
+				<div class="xans-element- xans-layout xans-layout-category top_category">
+					<ul>
+						<li><a href="/category/BEST-100/47/">BEST 100</a></li>
+						<li><a href="/category/NEW10/48/">NEW10%</a></li>
+						<li><a href="/category/MADE/23/">MADE</a></li>
+						<li><a href="/category/DRESS/24/">DRESS</a>
+							<ul class="sub_cate01">
+								<li><a href="/category/%EB%A1%B1-%EB%93%9C%EB%A0%88%EC%8A%A4/29/">롱 드레스</a></li>
+								<li><a href="/category/%EB%AF%B8%EB%94%94-%EB%93%9C%EB%A0%88%EC%8A%A4/30/">미디 드레스</a></li>
+								<li><a href="/category/%EB%AF%B8%EB%8B%88-%EB%93%9C%EB%A0%88%EC%8A%A4/31/">미니 드레스</a></li>
+							</ul>
+						</li>
+						<li><a href="/category/%ED%95%98%EA%B0%9D%EB%A3%A9/26/">하객룩</a>
+							<ul class="sub_cate01">
+								<li><a href="/category/%EB%A1%B1%EC%9B%90%ED%94%BC%EC%8A%A4/42/">롱원피스</a></li>
+								<li><a href="/category/%EB%AF%B8%EB%8B%88%EC%9B%90%ED%94%BC%EC%8A%A4/43/">미니원피스</a></li>
+							</ul>
+						</li>
+						<li><a href="/category/%ED%8C%8C%ED%8B%B0%EB%A3%A9/25/">파티룩</a>
+							<ul class="sub_cate01">
+								<li><a href="/category/%EB%A1%B1-%EB%93%9C%EB%A0%88%EC%8A%A4/32/">롱 드레스</a>
+									<ul class="sub_cate02">
+										<li><a href="/category/(%EC%86%8C%EB%B6%84%EB%A5%98)-Short-Sleeve/36/">(소분류) Short Sleeve</a>
+											<ul class="sub_cate03">
+												<li><a href="/category/(%EC%83%81%EC%84%B8%EB%B6%84%EB%A5%98)-Cropped/38/">(상세분류) Cropped</a>
+												</li>
+												<li><a href="/category/(%EC%83%81%EC%84%B8%EB%B6%84%EB%A5%98)-Graphic-Tees/39/">(상세분류) Graphic
+														Tees</a></li>
+											</ul>
+										</li>
+										<li><a href="/category/(%EC%86%8C%EB%B6%84%EB%A5%98)-Long-Sleeve/37/">(소분류) Long Sleeve</a>
+											<ul class="sub_cate03">
+												<li><a href="/category/(%EC%83%81%EC%84%B8%EB%B6%84%EB%A5%98)-Cropped/40/">(상세분류) Cropped</a>
+												</li>
+												<li><a href="/category/(%EC%83%81%EC%84%B8%EB%B6%84%EB%A5%98)-Graphic-Tees/41/">(상세분류) Graphic
+														Tees</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="/category/%EB%AF%B8%EB%8B%88-%EB%93%9C%EB%A0%88%EC%8A%A4/33/">미니 드레스</a></li>
+								<li><a href="/category/%EC%BD%94%EC%8A%A4%ED%8A%AC/49/">코스튬</a></li>
+							</ul>
+						</li>
+						<li><a href="/category/%EC%83%9D%ED%99%9C%ED%95%9C%EB%B3%B5/27/">생활한복</a>
+							<ul class="sub_cate01">
+								<li><a href="/category/%EC%9B%90%ED%94%BC%EC%8A%A4/34/">원피스</a></li>
+								<li><a href="/category/%EC%83%81%EC%9D%98/35/">상의</a></li>
+								<li><a href="/category/%EC%8A%A4%EC%BB%A4%ED%8A%B8/51/">스커트</a></li>
+								<li><a href="/category/%EC%95%85%EC%84%B8%EC%82%AC%EB%A6%AC/52/">악세사리</a></li>
+							</ul>
+						</li>
+						<li><a href="/category/ACC/28/">ACC</a>
+							<ul class="sub_cate01">
+								<li><a href="/category/%EB%85%B8%EB%A6%AC%EA%B0%9C/54/">노리개</a></li>
+								<li><a href="/category/%ED%97%A4%EC%96%B4/55/">헤어</a></li>
+								<li><a href="/category/%EA%B0%80%EB%B0%A9/53/">가방</a></li>
+							</ul>
+						</li>
+						<li><a href="/category/SALE/46/">SALE</a></li>
+					</ul>
+				</div>
+			</div><!-- //menu-main/1 -->
+		</div><!-- //top_nav_box -->
+
+		<form id="searchBarForm" name="" action="/product/search.html" method="get" target="_self" enctype="multipart/form-data">
+			<input id="banner_action" name="banner_action" value="" type="hidden"><div class="xans-element- xans-layout xans-layout-searchheader "><!--
+							$product_page=/product/detail.html
+							$category_page=/product/list.html
+						-->
+			<fieldset>
+			<legend>검색</legend>
+							<div class="wrap_search_box">
+								<div class="search_find_product">Find Product</div>
+								<div class="top_search_box">
+									<button type="button" class="btnClose"><img url="/mytest/img/sc1.png" alt="닫기"></button>
+									<input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text"><button type="button" class="btnDelete displaynone">삭제</button><button type="button" class="btnSearch" onclick="SEARCH_BANNER.submitSearchBanner(this); return false;"><img src="/mytest/img/sc1.png" alt="검색"></button><ul class="autoDrop" id=""></ul>
+			</div>
+			<!-- //top_search_box -->
+							</div>
+						</fieldset>
+			</div>
+			</form><!-- //Layout_SearchHeader -->
+		</div><!-- //inner -->
+</header>
+<!--#ez="1/6"-->
