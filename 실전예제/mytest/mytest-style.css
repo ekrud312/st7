@@ -708,11 +708,11 @@ background-color: #f9edf2;
     background-color: rgba(0,0,0,0.2);
   }
   .ec-base-product .prdList.list_gallery .description .name a span {
-    color: #f00 !important;
+    color: #EEEEEE !important;
     }
     
   .ec-base-product .prdList.list_gallery .description .spec>li span:nth-child(2) {
-      color: #f00 !important;
+      color: #EEEEEE !important;
   }
     
     
